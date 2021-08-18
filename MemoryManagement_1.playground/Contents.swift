@@ -2,11 +2,13 @@ import UIKit
 
 class Person {
     var name: String
+    var gadget: Gadget?
+    
     init(name: String) {
         self.name = name
         print("\(name) is being initialized")
     }
-    var gadget: Gadget?
+    
     deinit {
         print("\(name) is being deinitialized")
     }
@@ -15,6 +17,7 @@ class Person {
 class Gadget {
     var model: String
     unowned var owner: Person
+    
     init(model: String, owner: Person) {
         self.model = model
         self.owner = owner
