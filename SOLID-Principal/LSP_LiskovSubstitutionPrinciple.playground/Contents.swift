@@ -48,7 +48,8 @@ class Square: Shape {
     var width: Double = 0
     
     var area: Double {
-        return pow(width, 2)    }
+        return pow(width, 2)
+    }
 }
 
 let objRectangle = Rectangle()

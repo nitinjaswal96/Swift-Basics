@@ -16,7 +16,7 @@ class Triangle: Shape {
     }
     
     func calculateArea() -> Double {
-        return 1/2 * base * height
+        return 1/2 * base * height * 2
     }
 }
 
@@ -46,11 +46,11 @@ class Circle: Shape {
     }
 }
 
+
 class AreaCalculator {
     func area(shape: Shape) -> Double {
         return shape.calculateArea()
     }
-    
 }
 
 let objAreaCalculator = AreaCalculator()

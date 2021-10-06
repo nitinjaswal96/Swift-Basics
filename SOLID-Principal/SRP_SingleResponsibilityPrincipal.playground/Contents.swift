@@ -8,6 +8,11 @@ struct EmployeeModel {
     let address: String
 }
 
+protocol abc {
+    // func 1
+    // func 2
+}
+
 class HttpHandler {
     func getDataFromApi() -> Data {
         return Data()
@@ -37,15 +42,21 @@ class DatabaseHandler {
     }
 }
 
+class SaveViaApi {
+    
+}
+
 class Employee {
     let _httpHandler: HttpHandler
     let _parser: Parser
     let _databaseHandler: DatabaseHandler
+    let _obj: SaveViaApi
     
-    init(httpHandler: HttpHandler, parser: Parser, databaseHandler: DatabaseHandler) {
+    init(httpHandler: HttpHandler, parser: Parser, databaseHandler: DatabaseHandler, obj: SaveViaApi) {
         _httpHandler = httpHandler
         _parser = parser
         _databaseHandler = databaseHandler
+        _obj = obj
     }
     
     func getEmployeeData() -> Void {

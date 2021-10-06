@@ -64,7 +64,7 @@ anotherQueue.async {
 // Attributes: InitiallyInactive Queue: the execution of the tasks doesn’t start automatically, instead the developer has to trigger the execution.
 var inactiveQueue: DispatchQueue!
 func queueFunc() {
-    let anotherQueue = DispatchQueue(label: "com_anotherQueue", qos: .utility, attributes: .initiallyInactive)
+    let anotherQueue = DispatchQueue(label: "com_anotherQueue", qos: .utility, attributes: [.initiallyInactive, .concurrent])
     inactiveQueue = anotherQueue
 
     anotherQueue.async {
