@@ -1,6 +1,6 @@
 import UIKit
 
-// Subscript is a shortcut for accessing the member elements of a collection, list, or sequence .
+// Subscript is a shortcut for accessing the member elements of a collection, list, or sequence.
 
 struct Classroom {
     var students = [["Sam", "John", "Bella", "Steve"], ["Sabrina", "Dave", "Charlie"]]
